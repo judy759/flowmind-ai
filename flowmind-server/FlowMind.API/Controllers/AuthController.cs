@@ -68,7 +68,6 @@ namespace FlowMind.API.Controllers
             };
 
             return Ok(ApiResponse<UserResponseDto>.Success(userResponse, "Login successful."));        }
-    }
     [HttpPost("google-login")]
 public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto googleLoginDto)
 {
@@ -129,4 +128,4 @@ public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto googleLog
 
     return Ok(ApiResponse<UserResponseDto>.Success(userResponse, "Google login successful."));
 }
-}
+}}

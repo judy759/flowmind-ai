@@ -36,8 +36,7 @@ export interface ApiResponse<T> {
 })
 export class AuthService {
   private readonly http = inject(HttpClient);
-
-  private readonly baseUrl = 'https://localhost:5001/api/auth';
+  private readonly baseUrl = 'http://localhost:5237/api/auth';
   private readonly tokenKey = 'flowmind_token';
 
   login(request: LoginRequest): Observable<ApiResponse<UserResponse>> {
